@@ -1,0 +1,79 @@
+<style>
+
+</style>
+
+
+
+<div>
+
+</div>
+
+
+
+<script>
+
+    moduleFunctions = {
+        js_on:function(opts){
+
+        },
+        isMobile:function(){
+            return _.is( navigator.userAgent.match(/iPhone|iPad|iPod|Android|BlackBerry|Opera Mini|IEMobile/i) );
+        },
+        isDesktop:function(){
+            return _.is(! navigator.userAgent.match(/iPhone|iPad|iPod|Android|BlackBerry|Opera Mini|IEMobile/i) );
+        },
+        isAndroid: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        isBlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        isIOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        isOpera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        isWindows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        isRetina:function(){
+            return window.devicePixelRatio && window.devicePixelRatio > 1;
+        },
+        isIPad:function(){
+            isIPad = (/ipad/gi).test(navigator.platform);
+            return isIPad;
+        },
+        isLandscape:function(){
+            if(window.innerHeight < window.innerWidth){
+                return true;
+            }
+            return false;
+        },
+        getIOSVersion:function(){
+            if(this.isIOS()){
+                var OSVersion = navigator.appVersion.match(/OS (\d+_\d+)/i);
+                OSVersion = OSVersion[1] ? +OSVersion[1].replace('_', '.') : 0;
+                return OSVersion;
+            }
+            else
+                return false;
+        },
+        isStandAlone:function(){
+            if(_.is(navigator.standalone))
+                return navigator.standalone;
+            return false;
+        },
+        isChrome:function(){
+            var isChrome = (/Chrome/gi).test(navigator.appVersion);
+            var isSafari = (/Safari/gi).test(navigator.appVersion)
+            return isChrome && isSafari;
+        },
+        isSafari:function(){
+            var isSafari = (/Safari/gi).test(navigator.appVersion)
+            var isChrome = (/Chrome/gi).test(navigator.appVersion)
+            return !isChrome && isSafari;
+        }
+};
+
+</script>

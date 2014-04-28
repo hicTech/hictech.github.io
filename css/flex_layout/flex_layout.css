@@ -1,0 +1,226 @@
+/*
+                  _        _                     
+   ___ ___  _ __ | |_ __ _(_)_ __   ___ _ __ ___ 
+  / __/ _ \| '_ \| __/ _` | | '_ \ / _ \ '__/ __|
+ | (_| (_) | | | | || (_| | | | | |  __/ |  \__ \
+  \___\___/|_| |_|\__\__,_|_|_| |_|\___|_|  |___/
+                                                 
+*/
+
+.EXTENDER {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.EXTENDER.scroll-x {
+    overflow: auto;
+    white-space: nowrap;
+}
+.EXTENDER.scroll-x > div {
+    display: inline-block;
+}
+.PADDER,
+.PADDER10 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+}
+.PADDER5 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+}
+.PADDER15 {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    bottom: 15px;
+    right: 15px;
+}
+.PADDER25 {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    bottom: 25px;
+    right: 25px;
+}
+.PADDER35 {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    bottom: 35px;
+    right: 35px;
+}
+.PADDER45 {
+    position: absolute;
+    top: 45px;
+    left: 45px;
+    bottom: 45px;
+    right: 45px;
+}
+.PADDER55 {
+    position: absolute;
+    top: 55px;
+    left: 55px;
+    bottom: 55px;
+    right: 55px;
+}
+.PADDER-CENTER {
+    width: 100%;
+    height: 100%;
+    /* Internet Explorer 10 */
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    /* Safari, Chrome, and Opera */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    /* W3C */
+    display: box;
+    box-pack: center;
+    box-align: center;
+}
+/*                 
+  _ __ _____      __
+ | '__/ _ \ \ /\ / /
+ | | | (_) \ V  V / 
+ |_|  \___/ \_/\_/  
+
+*/
+
+.ROWS {
+    height: 100%;
+    width: 100%;
+    /* Old Syntax */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    /* New Syntax */
+    display: -webkit-flexbox;
+    -webkit-flex-direction: column;
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    /* W3C */
+    display: box;
+}
+
+.ROWS.AUTO {
+    height: auto;
+}
+
+.ROW-FLEX {
+    position: relative;
+    overflow: hidden;
+    /* Old Syntax */
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    /* New Syntax */
+    -webkit-flex: 1;
+    flex: 1;
+    -ms-flex: 1;
+}
+.ROW {
+    position: relative;
+    width: 100%;
+}
+/*
+            _ 
+   ___ ___ | |
+  / __/ _ \| |
+ | (_| (_) | |
+  \___\___/|_|
+                                 
+*/
+
+.COLS {
+    width: 100%;
+    height: 100%;
+    /* Old Syntax */
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    /* New Syntax */
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    display: -ms-flexbox;
+    /* W3C */
+    display: box;
+}
+.COL-FLEX {
+    position: relative;
+    height: auto;
+    /* Old Syntax */
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    /* New Syntax */
+    -webkit-flex: 1;
+    flex: 1;
+    -ms-flex: 1;
+}
+.COL {
+    position: relative;
+}
+/* ONLY FOR IE10 */
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .COL {
+        height: 100%;
+    }
+}
+/*
+        _ _             
+   __ _| (_) __ _ _ __  
+  / _` | | |/ _` | '_ \ 
+ | (_| | | | (_| | | | |
+  \__,_|_|_|\__, |_| |_|
+            |___/       
+*/
+
+.CENTER {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-flex-pack: center;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    box-pack: center;
+    box-align: center;
+}
+.START {
+    -webkit-box-pack: start;
+    -moz-box-pack: start;
+    -webkit-flex-pack: start;
+    -ms-flex-pack: start;
+    -ms-flex-align: start;
+    box-pack: start;
+}
+.END {
+    -webkit-box-pack: end;
+    -moz-box-pack: end;
+    -webkit-flex-pack: end;
+    -ms-flex-pack: end;
+    -ms-flex-align: end;
+    box-pack: end;
+}
+.text-dotted {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -moz-binding: url(ellipsis.xml#ellipsis);
+}

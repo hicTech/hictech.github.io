@@ -1,0 +1,59 @@
+<style>
+    .toolbar-row{
+        height:40px;
+        background-color:rgba(0,0,0,0.2);
+        display:none;
+    }
+    
+    .footer{
+        height:25px;
+        background-color:rgba(0,0,0,0.5);
+        color:white;
+        display:none;
+    }
+</style>
+
+
+
+<div class="COLS">
+    <div class="COL" style="width:200px"></div>
+    <div class="COL-FLEX">
+        <div class="EXTENDER">
+            <div class="PADDER-CENTER">
+                <div>
+                    <div class="ROWS AUTO">
+                        <div class="ROW" style="text-align:center">What a grey page...</div>
+                        <div class="ROW">&nbsp;</div>
+                        <div class="ROW QRcontainer">
+                            <div class="QR"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="COL" style="width:200px"></div>
+</div>
+
+
+<script>
+    moduleFunctions = {
+        js_on: function(opts) {
+            // this                                      // ritorna l'istanza del json moduleFunctions del modulo
+            // this.$();                                 // ritorna il nodo html del modulo
+            // getModule("template_name","module_id");   // ritorna l'istanza module_id del template template_name
+            // this.opts()                               // ritorna il json delle options del modulo
+            // this.getChildModules()                    // ritorna l'array degli id dei moduli figli di primo livello
+            // this.getId()                              // ritorna l'id del modulo
+            // this.getTemplate()                        // titorna il nome del template
+            // this.createScroller()                     // cerca un .wrapper e lo rende un iScroll
+            var that = this;
+            var $that = this.$();
+
+            $that.find(".QRcontainer").click(function() {
+                getModule("app").goToStep1()
+            });
+
+        }
+    };
+</script>

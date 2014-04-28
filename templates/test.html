@@ -1,0 +1,93 @@
+<style>
+    
+    
+@-webkit-keyframes vai {
+	0% {
+		
+		-webkit-transform: translateX(0px);
+            
+	}
+
+	100% {
+		-webkit-transform: translateX(+400px);
+	}
+}
+
+
+.vai {
+	-webkit-animation-name: vai;
+        -webkit-perspective: 1000;
+          -webkit-backface-visibility: hidden
+                -webkitTransform: translate3D(0px, 0px, 0px);
+        -webkit-transform:translate3d(0,0,0);
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
+}
+</style>
+
+
+<div class="EXTENDER">
+    <div class="ROWS">
+        <div class="ROW" style="background-color:red; height:30px">
+            
+        </div>
+        <div class="ROW-FLEX COLS">
+            <div class="COL" style="background-color:black; width:200px" id="col">
+                <div style=" background-color:blue; border:solid; overflow:auto" id="wewe">
+                </div>
+            </div>
+            <div class="COL-FLEX main" style="background-color:pink">
+                 <div style=" background-color:orange; border:solid; overflow:auto; width:600px; height:600px" id="we">
+                </div>
+            </div>
+           
+        </div>
+        <div class="ROW" style="background-color:red; height:30px"></div>
+
+    </div>
+</div>
+
+
+
+
+<script>
+    moduleFunctions = {
+        js_on: function(opts) {
+            var that = this;
+            var $that = this.$();
+            
+            var $wewe = $that.find("#wewe");
+            var $we = $that.find("#we");
+            for(var i=0; i<100; i++){
+                $wewe.append(' <div style="width:60px; border-radius:5px; height:60px; background-color:yellow; margin:10px; float:left; box-shadow:2px 2px 2px rgba(0,0,0,0.4)"><span>we</span>'+i+'</div>');
+                $we.append(' <div style="width:340px;border-radius:5px;height:340px; background-color:yellow; margin:10px; float:left; box-shadow:2px 2px 2px rgba(0,0,0,0.4)"><span>we</span>'+i+'</div>');
+            }
+            
+
+            setTimeout(function(){
+                //$that.find(".sidebar").doEffect({effect:"vai"});
+                
+                
+                var resize_fn = function(){ 
+                    $we.css({ "width":"400px" });
+                };
+                
+                var effect_fn = function(){
+                    
+                    $that.find(".main").doEffect({effect:"vai" , duration:600 }, resize_fn);
+                };
+                
+                
+                 $wewe.css({"width":"600px"});
+                effect_fn();
+                
+                //resize_fn();
+                //setTimeout(effect_fn, 2000);
+                
+                //effect_fn();
+                //setTimeout(resize_fn,700);
+                
+            },3000)
+        }
+
+    };
+</script>

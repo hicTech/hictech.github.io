@@ -1,0 +1,57 @@
+<style>
+.landing_page_container{
+    box-shadow: -16px 0px 30px rgba(0,0,0,0.5);
+}
+
+
+    
+</style>
+
+
+<div class="EXTENDER">
+    <div class="ROWS">
+        <div class="ROW COLS CENTER" style="height:100px">
+            <div class="COL logo_500_200" style="margin-top: 10px"></div>
+        </div>
+
+        <div class="ROW-FLEX bg_1 landing_page_container">
+            <div class="EXTENDER">
+                <div class="landing_message" style="margin: 30px auto"></div>
+                <div class="landing_page_how_works" style="margin: 50px auto;"></div>
+                <div style="margin: 0px auto; width:200px">
+                    <button class="BUTTON styled giant green" style="margin: 0px auto; width:200px" id="try">&nbsp;Try now&nbsp;</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="ROW" style="height: 50px; background-color: rgba(0,0,0,0.5); color:rgba(255,255,255,0.8); font-size:13px; text-align: center; padding-top:5px ">Da oggi con <b>logdIN</b> potrai usare il tuo telefono come chiave universale per tutte le tue log in.<br>Non dovrai più ricordare milioni di password bla bla</div>
+
+
+
+        <!--
+        <div class="ROW-FLEX">
+            <div class="EXTENDER target">
+                <div data-h-modules-role="dyn_module" data-h-template-name="step_0" data-h-module-id="step_0"></div>
+            </div>
+        </div>
+-->
+    </div>
+</div>
+
+
+
+
+<script>
+    moduleFunctions = {
+        js_on: function(opts) {
+            var that = this;
+            var $that = this.$();
+            
+            $that.find("#try").click(function() {
+                getModule("app").goToStep0();
+            });
+        }
+
+    };
+</script>

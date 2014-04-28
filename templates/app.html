@@ -1,0 +1,153 @@
+<style>
+    .toolbar-row{
+        height:40px;
+        background-color:rgba(0,0,0,0.2);
+    }
+    
+    .footer{
+        height:25px;
+        background-color:rgba(0,0,0,0.5);
+        color:white;
+        display:none;
+    }
+    
+     .toolbar .COL.done{
+        background-color: rgba(0,0,0,0.6);
+        margin: 0px 0px 0px 15px;
+        border-radius: 15px;
+        color: white;
+        text-align: center;
+        font-size: 11px;
+        padding: 8px 12px 12px 12px;
+        box-shadow: 1px 1px rgba(255,255,255,0.2);
+    }
+    
+    .toolbar .COL{
+        background-color: rgba(0,0,0,0.1);
+        margin: 0px 0px 0px 15px;
+        border-radius: 15px;
+        color: white;
+        text-align: center;
+        font-size: 11px;
+        padding: 8px 12px 12px 12px;
+        box-shadow: 1px 1px rgba(255,255,255,0.2);
+    }
+    
+</style>
+
+
+<div class="EXTENDER bg landing_page">
+    <div class="ROWS">
+        <div class="ROW toolbar-row">
+            <div class="EXTENDER toolbar">
+                <div class="PADDER5">
+                    <div class="COLS CENTER">
+                        <div class="COL">1</div>
+                        <div class="COL">2</div>
+                        <div class="COL">3</div>
+                        <div class="COL">4</div>
+                        <div class="COL">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ROW-FLEX landing_page_row">
+            <div class="EXTENDER">
+                <div data-h-modules-role="dyn_module" data-h-template-name="landing_page" data-h-module-id="landing_page"></div>
+            </div>
+        </div>
+
+        
+        <div class="ROW-FLEX step_0_row" style="display:none">
+            <div class="EXTENDER target">
+                <div data-h-modules-role="dyn_module" data-h-template-name="step_0" data-h-module-id="step_0"></div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+
+
+
+<script>
+    moduleFunctions = {
+        js_on: function(opts) {
+            var that = this;
+            var $that = this.$();
+
+            $that.find(".QRcontainer").click(function() {
+                that.goToStep1()
+            })
+
+        },
+        goToStep0: function() {
+            var that = this;
+            var $that = this.$();
+
+            that.setStep(0);
+            $that.find(".bg").removeClass("off");
+            $that.find(".step_0_row").show();
+            $that.find(".landing_page_row").hide();
+
+        },
+        goToStep1: function() {
+            var that = this;
+            var $that = this.$();
+           // $that.find(".target").html('<div data-h-modules-role="dyn_module" data-h-template-name="step_1" data-h-module-id="step_1"></div>');
+
+            $that.find(".toolbar-row").html();
+
+
+            solveDynModules($that);
+
+
+            $that.find(".toolbar-row").show();
+            that.setStep(1);
+            $that.find(".bg").removeClass("off");
+            $that.find(".step_0_row").show();
+            $that.find(".landing_page_row").hide();
+
+        },
+        goToStep2: function() {
+            var that = this;
+            var $that = this.$();
+            $that.find(".target").html('<div data-h-modules-role="dyn_module" data-h-template-name="step_2" data-h-module-id="step_2"></div>')
+
+            solveDynModules($that);
+            $that.find(".bg").addClass("bg2");
+            that.setStep(2);
+        },
+        goToStep3: function() {
+            var that = this;
+            var $that = this.$();
+            $that.find(".target").html('<div data-h-modules-role="dyn_module" data-h-template-name="step_3" data-h-module-id="step_3"></div>')
+
+            solveDynModules($that);
+            $that.find(".bg").removeClass("bg2");
+            that.setStep(3);
+        },
+        
+        
+        goToStep4: function() {
+            var that = this;
+            var $that = this.$();
+            $that.find(".target").html('<div data-h-modules-role="dyn_module" data-h-template-name="step_4" data-h-module-id="step_4"></div>')
+
+            solveDynModules($that);
+            $that.find(".bg").addClass("bg2");
+            that.setStep(4);
+        },
+        
+        setStep:function(index){
+            var that = this;
+            var $that = that.$();
+            for(var i=0;i<index;i++){
+                $that.find(".COL").eq(i).addClass("done")
+            }
+        }
+
+    };
+</script>

@@ -1,0 +1,64 @@
+<style>
+    .toolbar .COL.done{
+        background-color: rgba(0,0,0,0.6);
+        margin: 0px 0px 0px 15px;
+        border-radius: 15px;
+        color: white;
+        text-align: center;
+        font-size: 11px;
+        padding: 8px 12px 12px 12px;
+        box-shadow: 1px 1px rgba(255,255,255,0.2);
+    }
+    
+    .toolbar .COL{
+        background-color: rgba(0,0,0,0.1);
+        margin: 0px 0px 0px 15px;
+        border-radius: 15px;
+        color: white;
+        text-align: center;
+        font-size: 11px;
+        padding: 8px 12px 12px 12px;
+        box-shadow: 1px 1px rgba(255,255,255,0.2);
+    }
+    
+</style>
+
+
+
+<div class="EXTENDER toolbar">
+    <div class="PADDER5">
+        <div class="COLS CENTER">
+            <div class="COL">1</div>
+            <div class="COL">2</div>
+            <div class="COL">3</div>
+            <div class="COL">4</div>
+            <div class="COL">5</div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    moduleFunctions = {
+        js_on: function(opts) {
+            // this                                      // ritorna l'istanza del json moduleFunctions del modulo
+            // this.$();                                 // ritorna il nodo html del modulo
+            // getModule("template_name","module_id");   // ritorna l'istanza module_id del template template_name
+            // this.opts()                               // ritorna il json delle options del modulo
+            // this.getChildModules()                    // ritorna l'array degli id dei moduli figli di primo livello
+            // this.getId()                              // ritorna l'id del modulo
+            // this.getTemplate()                        // titorna il nome del template
+            // this.createScroller()                     // cerca un .wrapper e lo rende un iScroll
+            
+            
+        },
+        setStep:function(index){
+            var that = this;
+            var $that = that.$();
+            for(var i=0;i<index;i++){
+                $that.find(".COL").eq(i).addClass("done")
+            }
+        }
+    };
+</script>

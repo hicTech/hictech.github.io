@@ -1,0 +1,39 @@
+
+body {
+    margin: 0px 0px;
+}
+: : -webkit-scrollbar {
+    width: 6px;
+    height: 6px
+}
+/* Track */
+
+: : -webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+/* Handle */
+
+: : -webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer
+}
+: : -webkit-scrollbar-thumb: window-inactive {
+    background: rgba(0, 0, 0, 0.2);
+}
+div .tabular {
+    display: table;
+    width: 100%;
+    height: 100%
+}
+div .tabular-row {
+    display: table-row;
+}
+div .tabular-cell {
+    display: table-cell;
+    position: relative
+}
