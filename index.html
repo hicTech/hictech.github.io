@@ -1,65 +1,344 @@
-<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Hictech.github.io by hicTech</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Hictech.github.io</h1>
-        <p></p>
-
-
-        <p class="view"><a href="https://github.com/hicTech">View My GitHub Profile</a></p>
-
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     
-  </body>
+    <title>hictech</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/general/general.css">
+    <link rel="stylesheet" href="css/icon/glyphicons.css">
+    <link rel="stylesheet" href="css/mediaQuery/mediaQuery.css">
+    <link rel="stylesheet" href="css/button/button.css">
+
+
+
+
+
+    <script type="text/javascript" src="scripts/underscore_plus/_.js"></script>
+    <script type="text/javascript" src="scripts/underscore_plus/_plus.js"></script>
+    <script type="text/javascript" src="scripts/modernizr/modernizr.js"></script>
+
+    <script type="text/javascript" src="scripts/jquery/jquery-2.0.2.js"></script>
+
+
+
+
+
+    <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+
+
+    <style>
+        .header{
+            height: 70px;
+            background-color: rgba(0,0,0,0.35);
+            box-shadow: inset 0px -1px 10px rgba(0,0,0,0.4);
+            padding-top:10px;
+        }
+        
+        .site_body{
+            position:relative;
+            background-color: rgba(0,0,0,0.10);
+            width:100%;
+            height:100%;
+            
+        }
+        
+        .compress_body{
+            height:430px;
+            -webkit-animation: compress 3s ease-in-out;
+             /* Chrome, Safari, Opera */
+                -moz-animation: compress 3s ease-in-out;
+             /* Firefox */;
+        }
+        
+        @-webkit-keyframes compress {
+            0% {
+                
+                height: 100%;
+            }
+        
+            100% {
+                 height: 430px;
+            }
+        }
+        
+        
+        
+        
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div class="bg">
+        <div class="header">
+            <div class="hictech_logo"></div>
+        </div>
+        <div class="site_body">
+            <div style="padding:30px; text-align:center">
+                HicTech vede nello
+                <b>sviluppo web </b>il paradigma alla base della propria vision tecnologica e mission aziendale
+                <br>e pone il browser come ambiente
+                <b>unificato</b> e ideale per l’esecuzione di una vastissima gamma di applicazioni.</div>
+            <div class="devices"></div>
+        </div>
+        <div class="footer">
+           we
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+
+
+
+<style>
+    .devices {
+    background-image: url('img/devices.png');
+    background-repeat: no-repeat;
+    margin: 0px auto;
+    width: 300px;
+    height: 540px;
+    background-size: 4000px 4000px;
+    background-position: -173px -3091px;
+   -webkit-mask-image: url('img/mask.png');
+        
+        
+        
+    -webkit-transform: scale(1);
+  /* Chrome, Opera 15+, Safari 3.1+  */
+    -ms-transform: scale(1);
+  /* IE 9 */
+    transform: scale(1);
+  /* Firefox 16+, IE 10+, Opera */;
+}
+
+.bg_anim_prima {
+    width: 800px;
+    height: 500px;
+    background-size: 3200px 3200px;
+    background-position: -97px -2400px;
+    -webkit-animation: prima 0.6s ease-in-out;
+ /* Chrome, Safari, Opera */
+    -moz-animation: prima 0.6s ease-in-out;
+ /* Firefox */;
+}
+
+@-webkit-keyframes prima {
+    0% {
+        width: 300px;
+        height: 540px;
+        border: solid 1px rgba(255,255,255,0.2);
+        background-size: 4000px 4000px;
+        background-position: -173px -3091px;
+    }
+
+    100% {
+        width: 800px;
+        height: 500px;
+        background-size: 3200px 3200px;
+        background-position: -97px -2400px;
+    }
+}
+
+.bg_anim_seconda {
+    margin-top: 130px;
+width: 933px;
+height: 284px;
+background-size: 1650px 1650px;
+background-position: -46px -1194px;
+    -webkit-animation: seconda 0.6s ease-in-out;
+ /* Chrome, Safari, Opera */
+    -moz-animation: seconda 0.6s ease-in-out;
+ /* Firefox */;
+}
+
+@-webkit-keyframes seconda {
+    0% {
+        width: 800px;
+        height: 500px;
+        margin-top: 0px;
+        background-size: 3200px 3200px;
+        background-position: -97px -2400px;
+    }
+
+    100% {
+        margin-top: 130px;
+        width: 933px;
+       height: 284px;
+        background-size: 1650px 1650px;
+        background-position: -46px -1194px;
+    }
+}
+
+.bg_anim_terza {
+    margin-top: 0px;
+    width: 1030px;
+    height: 500px;
+    background-size: 1800px 1800px;
+    background-position: -36px -1131px;
+    -webkit-animation: terza 0.6s ease-in-out;
+ /* Chrome, Safari, Opera */
+    -moz-animation: terza 0.6s ease-in-out;
+ /* Firefox */;
+}
+
+@-webkit-keyframes terza {
+    0% {
+        margin-top: 130px;
+width: 933px;
+height: 284px;
+background-size: 1650px 1650px;
+background-position: -46px -1194px;
+    }
+
+    100% {
+        margin-top: 0px;
+        width: 1030px;
+        height: 500px;
+        background-size: 1800px 1800px;
+        background-position: -36px -1131px;
+    }
+}
+
+.bg_anim_quarta {
+    width: 648px;
+    height: 540px;
+    background-size: 990px 990px;
+    background-position: 49px -339px;
+    -webkit-animation: quarta 0.6s ease-in-out;
+ /* Chrome, Safari, Opera */
+    -moz-animation: quarta 0.6s ease-in-out;
+ /* Firefox */;
+}
+
+@-webkit-keyframes quarta {
+    0% {
+        width: 1030px;
+        height: 500px;
+        background-size: 1800px 1800px;
+        background-position: -36px -1131px;
+    }
+
+    100% {
+        width: 648px;
+        height: 540px;
+        background-size: 990px 990px;
+        background-position: 49px -339px;
+    }
+}
+
+.bg_anim_quinta {
+    width: 700px;
+    height: 526px;
+    background-size: 600px 600px;
+    background-position: 47px -57px;
+    -webkit-animation: quinta 0.6s ease-in-out;
+ /* Chrome, Safari, Opera */
+    -moz-animation: quinta 0.6s ease-in-out;
+ /* Firefox */;
+}
+
+@-webkit-keyframes quinta {
+    0% {
+        width: 648px;
+        height: 540px;
+        background-size: 990px 990px;
+        background-position: 49px -339px;
+    }
+
+    100% {
+        width: 700px;
+        height: 526px;
+        background-size: 600px 600px;
+        background-position: 47px -57px;
+    }
+}
+
+    
+    
+.bg_anim_fine {
+   margin-top: 0px;
+    width: 570px;
+height: 270px;
+background-size: 1000px 1000px;
+background-position: -36px -626px;
+-webkit-animation: fine 3s ease-in-out;
+    -webkit-animation: fine 3s ease-in-out;
+ /* Chrome, Safari, Opera */
+    -moz-animation: fine 3s ease-in-out;
+ /* Firefox */;
+}
+
+@-webkit-keyframes fine {
+    0% {
+        width: 700px;
+        height: 526px;
+        background-size: 600px 600px;
+        background-position: 47px -57px;
+    }
+
+    100% {
+        width: 570px;
+        height: 270px;
+        background-size: 1000px 1000px;
+        background-position: -36px -626px;
+
+    }
+}
+
+
+</style>
+
+<script type="text/javascript" src="scripts/underscore_plus/_string.js"></script>
+
+<script>
+    $(document).ready(function() {
+
+        var step_stop_time = 1000;
+
+        setTimeout(function() {
+            startAnimation();
+        }, step_stop_time);
+
+        function startAnimation() {
+            $(".devices").addClass("bg_anim_prima");
+
+            setTimeout(function() {
+                $(".devices").addClass("bg_anim_seconda");
+            }, step_stop_time);
+
+            setTimeout(function() {
+                $(".devices").addClass("bg_anim_terza");
+            }, step_stop_time * 2);
+            
+            setTimeout(function() {
+                $(".devices").addClass("bg_anim_quarta");
+            }, step_stop_time * 3);
+            
+            setTimeout(function() {
+                $(".devices").addClass("bg_anim_quinta");
+            }, step_stop_time * 4);
+            
+            setTimeout(function() {
+                $(".devices").addClass("bg_anim_fine");
+                $(".site_body").addClass("compress_body");
+            }, step_stop_time * 5);
+        }
+    });
+</script>
+
 </html>
