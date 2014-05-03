@@ -25,6 +25,8 @@
     <script type="text/javascript" src="scripts/modernizr/modernizr.js"></script>
 
     <script type="text/javascript" src="scripts/jquery/jquery-2.0.2.js"></script>
+    
+    <script type="text/javascript" src="scripts/img_loader/imagesLoaded.js"></script>
 
 
 
@@ -79,6 +81,7 @@
 
 <body>
 
+    <img src="img/devices.png" style="display:none" id="img"/>
     <div class="bg">
         <div class="header">
             <div class="hictech_logo"></div>
@@ -307,37 +310,44 @@ background-position: -36px -626px;
 
 <script>
     $(document).ready(function() {
-
+        
+        
+    imagesLoaded( document.querySelector('#img'), function( instance ) {
         var step_stop_time = 1000;
 
-        setTimeout(function() {
-            startAnimation();
-        }, step_stop_time);
-
-        function startAnimation() {
-            $(".devices").addClass("bg_anim_prima");
-
             setTimeout(function() {
-                $(".devices").addClass("bg_anim_seconda");
+                startAnimation();
             }, step_stop_time);
+    
+            function startAnimation() {
+                $(".devices").addClass("bg_anim_prima");
+    
+                setTimeout(function() {
+                    $(".devices").addClass("bg_anim_seconda");
+                }, step_stop_time);
+    
+                setTimeout(function() {
+                    $(".devices").addClass("bg_anim_terza");
+                }, step_stop_time * 2);
+                
+                setTimeout(function() {
+                    $(".devices").addClass("bg_anim_quarta");
+                }, step_stop_time * 3);
+                
+                setTimeout(function() {
+                    $(".devices").addClass("bg_anim_quinta");
+                }, step_stop_time * 4);
+                
+                setTimeout(function() {
+                    $(".devices").addClass("bg_anim_fine");
+                    $(".site_body").addClass("compress_body");
+                }, step_stop_time * 5);
+            }
+        
+    });
 
-            setTimeout(function() {
-                $(".devices").addClass("bg_anim_terza");
-            }, step_stop_time * 2);
-            
-            setTimeout(function() {
-                $(".devices").addClass("bg_anim_quarta");
-            }, step_stop_time * 3);
-            
-            setTimeout(function() {
-                $(".devices").addClass("bg_anim_quinta");
-            }, step_stop_time * 4);
-            
-            setTimeout(function() {
-                $(".devices").addClass("bg_anim_fine");
-                $(".site_body").addClass("compress_body");
-            }, step_stop_time * 5);
-        }
+        
+        
     });
 </script>
 
