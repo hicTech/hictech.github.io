@@ -1,0 +1,92 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+	<meta name = "viewport"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>iDocs - backdoor</title>
+	<LINK type='text/css' rel='stylesheet' href="css/form/form.css">
+	<LINK type='text/css' rel='stylesheet' href="css/button/button.css">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name = "viewport" content = "initial-scale = 1, user-scalable = no">
+
+	<style>
+		body{
+			font-family:helvetica;
+			font-size: 13px;
+			color:#333;
+			
+		}
+		
+		.screen {
+			width: 100%;
+			height: 100%;
+			background: #939496;
+			background: -moz-radial-gradient(center, ellipse cover, #939496 0%, #2B2B2B 100%);
+			background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #939496), color-stop(100%, #2B2B2B));
+			background: -webkit-radial-gradient(center, ellipse cover, #939496 0%, #2B2B2B 100%);
+			background: -o-radial-gradient(center, ellipse cover, #939496 0%, #2B2B2B 100%);
+			background: -ms-radial-gradient(center, ellipse cover, #939496 0%, #2B2B2B 100%);
+			background: radial-gradient(ellipse at center, #939496 0%, #2B2B2B 100%);
+			filter: progid:dximagetransform.microsoft.gradient(startColorstr='#939496', endColorstr='#2b2b2b', GradientType=1);
+			background-color: #919191;
+			background-repeat: repeat-x;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			}
+		
+	</style>
+
+	<script>
+		
+		var backDoorPrefis="a3rwewe";
+		var backDoorFactor=3333;
+		
+		function calcola(){
+			var id=document.getElementById("input").value;
+			
+			var html = '<div>This is your new password for iDocs</div><div style="font-size:13px; background-color:#666; color:#fff; border-radius:3px; padding:5px 20px; width:110px; margin:10px auto">'+backDoorPrefis+parseInt(parseInt(id)/backDoorFactor)+'</div><div>Use it to log in iDocs and set a new one.</div>';
+			
+			document.getElementById("result").innerHTML = html ;
+
+		}
+	</script>
+</head> 
+
+<body >
+	<div class="screen">
+		<div style="width:320px; margin:5px auto; color:#fff; font-weight:bold; text-align:center;font-size:11px">Due to your iOS upgrade iDocs has lost info about your password.
+For your security and to keep your data safe we can't update your password without your customer id (this number was been created at iDocs first launch and you are the only one who know this number).
+Use this page to get a new password.</div>
+		<div id="container" style="width:240px; margin:30px auto; overflow:auto; background-color:#eee; text-align:center;border-radius:5px; padding:20px">
+			<div>Insert here your customer id</div>
+			<div><input MAXLENGTH="13" style="width:110px" type="text" id="input"/ ></div>
+			<div><button class="BUTTON medium green" onclick="calcola()" type="button" value="calculate">get new password</button></div>
+			
+			
+			<div id="result">
+				
+			</div>
+	
+		</div>
+		
+	</div>
+	<script type="text/javascript">
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-35148214-1']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
+</body> 
+</html> 

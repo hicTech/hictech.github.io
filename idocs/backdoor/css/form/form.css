@@ -1,0 +1,418 @@
+
+
+.EDIT-row{
+	clear: both;
+	height: 10px;
+	margin: 15px 0px 15px 0px;
+	text-align: center;
+	padding:2px 0px;
+}
+
+.FORM-field-row{
+	float:left;
+	width:97%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.05);
+	padding: 0px 10px;
+	border-bottom: 1px dotted rgba(0, 0, 0, 0.15);
+	box-shadow: -2px -4px 11px 0px rgba(0, 0, 0, 0.08);
+}
+
+.FORM-field-row:last-child{
+	border-bottom: none;
+}
+
+.FORM-field{
+	float: left;
+	margin: 0px 10px 10px 0px;
+	width:100%;
+}
+
+.FORM-field-eraser{
+	display:none;
+	font-size: 11px;
+	cursor: pointer;
+	color: white;
+	font-weight: normal;
+	position: relative;
+	height: 21px;
+	left: -25px;
+	background-color: #b4b4b4;
+	padding: 1px 4px 1px 4px;
+	border-radius: 10px;
+	top: 0px;
+	left: -21px;
+}
+
+
+.FORM-field-eraser:hover{
+	color:#222
+}
+
+
+.buttons-container{
+	padding-top: 20px;
+	clear:both;
+	text-align: center
+}
+
+.FORM-field p{
+	float:left
+}
+
+
+.FORM-field p:first-child{
+	float: left;
+	width: 170px;
+	padding: 10px 19px;
+	text-align: right;
+}
+
+.FORM-label{
+	color: #222;
+	font-weight:bold;
+	font-size: 13px;
+	padding:0px 3px;
+	text-transform: capitalize
+}
+
+.FORM-label.no-capitolize {
+	text-transform: none;
+}
+
+
+.FORM-complex-container{
+	width: 89%;
+	margin:20px auto;
+	border: solid 1px #a4a4a4; 
+	border-radius:5px;
+	box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.FORM-complex-label{
+	font-size: 19px;
+	margin: 0px 0px 2px 0px;
+	color: #555;
+	text-shadow: 1px 1px #EEE;
+	background-color: rgba(0, 0, 0, 0.1);
+	height: 20px;
+	vertical-align: middle;
+	border-bottom:1px solid #a4a4a4;
+}
+
+.FORM-slider{
+	width:250px; 
+	margin-top:4px
+}
+
+.FORM-slider-input{
+	width:60px
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'], 
+input[type='search'],
+input[type='time'],
+textarea{
+	background: #F6F6F6;
+	color: #666;
+	font-size: 13px;
+	padding: 7px 14px;
+	border: 1px solid #B9B9B9;
+	border-top-color: #A4A4A4;
+	-moz-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);
+	-ms-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);
+	-o-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);
+	-webkit-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);
+	box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	width: 235px;
+}
+
+
+input[type='search']{
+	-webkit-appearance: none;
+	padding: 7px 4px;
+	background-image: url(img/search_icon.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	width: 250px
+
+}
+
+input[type='time']{
+	-webkit-appearance: none;
+	padding: 7px 12px;
+	background-image: url(img/time_icon.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	width: 200px;
+}
+
+
+input[type='text'][data-role='tags']{
+	-webkit-appearance: none;
+	padding: 7px 12px;
+	background-image: url(img/tags_icon.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+input[type='search'].input_no_value,
+input[type='time'].input_no_value{
+	background-image: none
+}
+
+input[type='checkbox']{
+	-webkit-box-shadow: inset 0 1px 2px white, 0 1px 2px rgba(0, 0, 0, .2);
+	-webkit-appearance: none;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 3px;
+	background: -webkit-linear-gradient(#FAFAFA, gainsboro);
+	border-radius: 3px;
+	border: 1px solid #A0A0A0;
+	display: inline-block;
+	height: 16px;
+	margin-bottom: 0;
+	margin-top: -3px;
+	position: relative;
+	top: 3px;
+	vertical-align: baseline;
+	width: 16px;
+}
+
+input[type="checkbox"]:checked::before {
+	color: gray;
+	content: url('img/checkmark.png');
+	font-size: 13px;
+	height: 16px;
+	left: 2px;
+	position: absolute;
+}
+
+.fake_radio{
+	background-image:url(img/radio_off.png);
+	height: 17px;
+	width: 17px;
+	cursor:pointer
+}
+.fake_radio.on{
+	background-image:url(img/radio_on.png);
+	cursor:pointer;
+}
+
+input[type="radio"]{
+	-webkit-box-shadow: inset 0 1px 2px white, 0 1px 2px rgba(0, 0, 0, .2);
+	-webkit-appearance: none;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 3px;
+	background: -webkit-linear-gradient(#FAFAFA, gainsboro);
+	border-radius: 100%;
+	border: 1px solid #A0A0A0;
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+}
+
+input[type="radio"]:checked::before {
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+	-webkit-margin-start: 4px;
+	background: gray;
+	border-radius: 10px;
+	content: '';
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 400;
+	height: 5px;
+	left: 0;
+	margin-top: 4px;
+	opacity: 1;
+	position: absolute;
+	top: 0;
+	vertical-align: top;
+	width: 5px;
+}
+
+
+input:focus,
+textarea:focus{
+	background: #fff;
+
+}
+
+.checkbox-container,
+.radio-container{
+	font-size:12px;
+	float: left;
+	padding: 5px 5px 5px 9px;
+	margin: 2px 30px 10px 0px;
+	background-image: url(img/alpha20.png);
+	border-radius:3px
+}
+
+.checkbox-container > div:first-child > div,
+.radio-container > div:first-child > div{
+	margin:-11px 0px -8px -16px
+}
+
+.checkbox-container > div,
+.radio-container > div{
+	float: left;
+}
+
+.checkbox-container > div:first-child,
+.radio-container > div:first-child{
+	float: left;
+	margin:0px 5px 0px 0px;
+	padding-top:2px
+}
+
+
+.FORM-select{
+	background: none no-repeat scroll right center #F6F6F6;
+    border-color: #EEEEEE;
+    border-radius: 5px 5px 5px 5px;
+    color: #222222;
+    font: 12px/21px arial,sans-serif;
+    height: 37px;
+    margin-top: 2px;
+    overflow: hidden;
+    padding: 8px 5px;
+    width: 158px;
+}
+
+/*
+ * LITTLE FORM
+ */
+
+
+.FORM-field-row.little{
+	margin-bottom:5px;
+	color:#222
+}
+
+.FORM-field-row.little span.FORM-field-eraser{
+	display:none;
+	font-size: 11px;
+	cursor: pointer;
+	color: white;
+	font-weight: normal;
+	position: relative;
+	height: 21px;
+	left: -25px;
+	background-color: #b4b4b4;
+	padding: 1px 4px 1px 4px;
+	border-radius: 10px;
+	top: 0px;
+	left: -21px;
+}
+
+
+.FORM-field-row.little p.FORM-label{
+	font-size: 11px;
+	padding:0px 3px;
+}
+
+
+
+.FORM-field-row.little p input[type='text'],
+.FORM-field-row.little p input[type='email'],
+.FORM-field-row.little p input[type='password'],
+.FORM-field-row.little p .INPUT-typeDate,
+.FORM-field-row.little p input[type='number'],
+.FORM-field-row.little p input[type='search'],
+.FORM-field-row.little p input[type='time'],
+.FORM-field-row.little p textarea{
+	font-size: 11px;
+	padding: 4px 4px 4px 8px;
+
+}
+
+
+.FORM-field-row.little p .INPUT-typeDate{
+	background-image: url(img/little_date_icon.png);
+	background-repeat: no-repeat;
+	width: 100px;
+	background-position: right;
+	padding: 4px 4px 4px 12px;
+}
+
+.FORM-field-row.little p input[type='time']{
+	background-image: url(img/little_time_icon.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	padding: 4px 4px 4px 12px;
+}
+
+.FORM-field-row.little p input[type='text'][data-role='tags']{
+	background-image: url(img/little_tags_icon.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	padding: 4px 4px 4px 12px;
+}
+
+.FORM-field-row.little p input[type='search']{
+	padding: 4px;
+	-webkit-appearance: none;
+	background-image: url(img/little_search_icon.png);
+	background-repeat: no-repeat;
+	background-position: right
+}
+
+.FORM-field-row.little p input[type='search'].input_no_value,
+.FORM-field-row.little p .INPUT-typeDate.input_no_value,
+.FORM-field-row.little p input[type='time'].input_no_value{
+	background-image: none
+}
+
+.FORM-field-row.little .FORM-slider{
+	width: 150px
+}
+
+
+.FORM-field-row.little .checkbox-container ,
+.FORM-field-row.little .radio-container{
+	font-size:11px;
+	float: left;
+	padding: 3px 3px 4px 8px;
+	margin: 2px 5px 7px 3px;
+}
+
+.FORM-field-row.little p select{
+	font-size: 11px;
+	padding: 0px 10px;
+	height : 22px;
+
+}
+
+
+.FORM-tag-container{
+	float: left;
+	padding: 5px;
+	margin: 6px 12px 10px 0px;
+	background-image: url(img/alpha20.png);
+	border-radius:3px
+}
+
+.FORM-tag-container > div{
+	float: left;
+	margin: 0px 0px 0px 10px;
+	background-image: url(img/x.png);
+	width: 15px;
+	height: 14px;
+	cursor: pointer
+}
+.FORM-tag-container > div:hover{
+	background-color: #ddd
+}
+
+.FORM-tag-container > span{
+	float: left;
+	margin: 0px 0px 0px 2px
+}
