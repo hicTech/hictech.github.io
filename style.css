@@ -1,3 +1,49 @@
+
+
+
+.hictech_logo{
+    background-image:url('img/hictech_logo.png');
+    background-repeat:no-repeat;
+    margin:0px auto;
+    width:158px;
+    height:50px;
+    background-size:158px 50px;
+}
+
+
+
+
+
+@-webkit-keyframes compress {
+    0% {height: 3000px;}
+    100% {height: 400px;}
+}
+
+@-moz-keyframes compress {
+    0% {height: 3000px;}
+    100% {height: 400px;}
+}
+
+@keyframes compress {
+    0% {height: 3000px;}
+    100% {height: 400px;}
+}
+
+.footer{
+    position:relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @font-face {
   font-family: 'Lato';
   font-style: normal;
@@ -28,17 +74,6 @@
 
 
 
-
-.hictech_logo{
-    background-image:url('img/hictech_logo.png');
-    background-repeat:no-repeat;
-    margin:0px auto;
-    width:158px;
-    height:50px;
-    background-size:158px 50px;
-}
-
-    
 
     
 

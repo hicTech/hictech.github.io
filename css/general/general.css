@@ -4,6 +4,29 @@ body{
     color: #fff;
 }
 
+.header{
+    height:50px;
+    background-color: rgba(0,0,0,0.3);
+    padding: 10px 0px;
+}
+
+.site_body{
+
+}
+
+.footer{
+    background-color: rgba(0,0,0,0.3);
+}
+
+.footer_container{
+    padding:30px; text-align:center;
+}
+
+.slogan{
+    text-align: center;
+    padding:20px
+}
+
 .brashed{
 	background-image: url("img/loading_brashed_10.png");
 	background-repeat:repeat;
@@ -11,8 +34,40 @@ body{
 
 
 .bg{
-    color: white;
 
-    position: fixed; top:0px; left: 0px; width: 100%; height: 100%; 
     background-image: url('img/bg_1.jpg'); background-size: 100% 100%; color:white;
+}
+
+
+
+
+
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    body{
+        margin:0px 0px;
+        font: 16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #fff;
+    }
+
+    .footer_container{
+        padding:10px; text-align:center;
+    }
+
+    .footer_container span{
+        display: none;
+    }
+
+    .header{
+        height:50px;
+        background-color: rgba(0,0,0,0.3);
+        padding: 5px 0px;
+    }
+
+    .slogan{
+        text-align: center;
+        padding:15px 8px;
+    }
 }

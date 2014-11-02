@@ -10,7 +10,6 @@
     
     <title>hictech</title>
 
-    <link rel="stylesheet" href="css/flex_layout/flex_layout.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/general/general.css">
     <link rel="stylesheet" href="css/icon/glyphicons.css">
@@ -18,7 +17,6 @@
     <link rel="stylesheet" href="css/button/button.css">
     
     <link rel="stylesheet" href="css/animations/animations.css">
-    <link rel="stylesheet" href="css/animations/mobile-animations.css">
 
 
 
@@ -39,46 +37,88 @@
     <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 
 
+    <style>
+        .header{
+            height: 60px;
+            background-color: rgba(0,0,0,0.35);
+            box-shadow: inset 0px -1px 10px rgba(0,0,0,0.4);
+            padding-top:10px;
+        }
+        
+        .site_body{
+            position:relative;
+            background-color: rgba(0,0,0,0.10);
+            width:100%;
+            height:100%;
+            
+        }
+        
+        .compress_body{
+            height:400px;
+            -webkit-animation: compress 0.6s ease-in-out;
+               -moz-animation: compress 0.6s ease-in-out;
+                    animation: compress 0.6s ease-in-out;
+        }
+        
+        @-webkit-keyframes compress {
+            0% {height: 3000px;}
+            100% {height: 400px;}
+        }
+        
+        @-moz-keyframes compress {
+            0% {height: 3000px;}
+            100% {height: 400px;}
+        }
+        
+        @keyframes compress {
+            0% {height: 3000px;}
+            100% {height: 400px;}
+        }
+        
+        .footer{
+            position:relative;
+        }
+
+
+
+
+
+    </style>
+
+
 
 </head>
 
 <body>
 
-
-            <img src="img/devices.png" style="display:none" id="img"/>
-
-            <div class="EXTENDER bg">
-                <div class="ROWS">
-                    <div class="ROW header">
-                        <div class="hictech_logo"></div>
-                    </div>
-                    <div class="ROW site_body">
-                        <div class="slogan">
-                            HicTech vede nello
-                            <b>sviluppo web </b>il paradigma alla base della propria vision tecnologica e mission aziendale
-                            <br>e pone il browser come ambiente
-                            <b>unificato</b> e ideale per l’esecuzione di una vastissima gamma di applicazioni.
-                        </div>
-
-                        <div class="devices_container"><div class="devices"></div></div>
-                    </div>
-                    <div class="ROW-FLEX footer" style="opacity: 0">
-                        <div class="footer_container">
-                            <button style="margin-top:12px" class="BUTTON styled green" onclick="location.href='mailto:info@hictech.com'">Contattaci</button></br>
-                            <b>HicTech srl</b></br>
-                            <span>
-                                <font style="font-size:14px">Corso Mazzini 28 - 87100 Cosenza<br>P.Iva 02945020788</font><br>
-                                <font style="font-size:12px">Iscritto Camera di commercio Cosenza - REA: 200621</font><br>
-                                <font style="font-size:12px">Capitale sociale 42.110 EUR interamente versato<br>
-                            </span>
-
-                        </div>
-                    </div>
-                </div>
+    <img src="img/devices.png" style="display:none" id="img"/>
+    <div class="bg">
+        <div class="header">
+            <div class="hictech_logo"></div>
+        </div>
+        <div class="site_body">
+            <div style="padding:20px 30px; text-align:center">
+                HicTech vede nello
+                <b>sviluppo web </b>il paradigma alla base della propria vision tecnologica e mission aziendale
+                <br>e pone il browser come ambiente
+                <b>unificato</b> e ideale per l’esecuzione di una vastissima gamma di applicazioni.
             </div>
+            <div class="devices"></div>
+        </div>
+        <div class="footer">
+            <div style="padding:30px; text-align:center">
+                <button style="margin-top:12px" class="BUTTON styled green" onclick="location.href='mailto:info@hictech.com'">Contattaci</button></br>
+                 <b>HicTech srl</b></br>
+                    <font style="font-size:14px">Corso Mazzini 28 - 87100 Cosenza<br>P.Iva 02945020788</font><br>
+                    <font style="font-size:12px">Iscritto Camera di commercio Cosenza - REA: 200621</font><br>
+                    <font style="font-size:12px">Capitale sociale 42.110 EUR interamente versato<br>
+                    
+            </div>
+        </div>
 
 
 
+    </div>
 
 
 </body>
@@ -95,8 +135,8 @@
 
 <script>
     $(document).ready(function() {
-
-
+        
+        
     function detectIE() {
         var ua = window.navigator.userAgent;
         var msie = ua.indexOf('MSIE ');
@@ -127,33 +167,27 @@
             
                     function startAnimation() {
                         $(".devices").addClass("bg_anim_prima");
-
+            
                         setTimeout(function() {
                             $(".devices").addClass("bg_anim_seconda");
                         }, step_stop_time);
-
-
+            
                         setTimeout(function() {
                             $(".devices").addClass("bg_anim_terza");
                         }, step_stop_time * 2);
-
-
+                        
                         setTimeout(function() {
                             $(".devices").addClass("bg_anim_quarta");
                         }, step_stop_time * 3);
-
-
+                        
                         setTimeout(function() {
                             $(".devices").addClass("bg_anim_quinta");
                         }, step_stop_time * 4);
-
-
-
+                        
                         setTimeout(function() {
                             $(".devices").addClass("bg_anim_fine");
-                            $(".footer").animate({"opacity":"1"});
+                            $(".site_body").addClass("compress_body");
                         }, step_stop_time * 5);
-
                     }
                 
             });

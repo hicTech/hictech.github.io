@@ -1,3 +1,5 @@
+
+
 .devices {
     background-image: url('../../img/devices.png');
     background-repeat: no-repeat;
@@ -6,12 +8,6 @@
     height: 540px;
     background-size: 4000px 4000px;
     background-position: -191px -3190px;
-    -webkit-transform: scale(0.9);
-    /* Chrome, Opera 15+, Safari 3.1+  */
-    -ms-transform: scale(0.9);
-    /* IE 9 */
-    transform: scale(0.9);
-    /* Firefox 16+, IE 10+, Opera */
     -webkit-transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
 	-webkit-perspective: 1000;
