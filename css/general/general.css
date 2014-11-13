@@ -14,9 +14,7 @@ body{
 
 }
 
-.footer{
-    background-color: rgba(0,0,0,0.3);
-}
+
 
 .footer_container{
     padding:30px; text-align:center;
@@ -56,9 +54,7 @@ and (max-device-width : 480px) {
         padding:10px; text-align:center;
     }
 
-    .footer_container span{
-        display: none;
-    }
+
 
     .header{
         height:50px;
@@ -69,5 +65,6 @@ and (max-device-width : 480px) {
     .slogan{
         text-align: center;
         padding:15px 8px;
+        font-size: 13px;
     }
 }

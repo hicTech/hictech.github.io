@@ -13,6 +13,16 @@
 	-webkit-perspective: 1000;
 }
 
+.devices_little {
+    background-image: url('../../img/devices_little.png');
+    background-repeat: no-repeat;
+    margin: 0px auto;
+    width: 200px;
+    height: 100px;
+    background-size: 200px 100px;
+}
+
+
 
 
 
@@ -326,6 +336,7 @@
 /* FINE *//* FINE *//* FINE *//* FINE *//* FINE *//* FINE *//* FINE *//* FINE *//* FINE *//* FINE */
 .bg_anim_fine {
     margin-top: 0px;
+    margin-bottom: 20px;
     width: 570px;
     height: 270px;
     background-size: 1000px 1000px;

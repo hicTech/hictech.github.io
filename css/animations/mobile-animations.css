@@ -19,16 +19,14 @@ and (max-device-width : 480px) {
 
 
     .devices {
-        background-image: url('../../img/devices.png');
-        background-repeat: no-repeat;
-        margin: 0px auto;
-        width: 150px;
-        height: 270px;
-        background-size: 2000px 2000px;
-        background-position: -81px -1595px;
-        -webkit-transform: translate3d(0, 0, 0);
-        -webkit-backface-visibility: hidden;
-        -webkit-perspective: 1000;
+        margin-top: -30px;
+        width: 285px;
+        height: 135px;
+        background-size: 500px 500px;
+        background-position: -18px -313px;
+        -webkit-animation: fine 0.6s ease-in-out;
+        -moz-animation: fine 0.6s ease-in-out;
+        animation: fine 0.6s ease-in-out;
 
     }
 
@@ -37,61 +35,15 @@ and (max-device-width : 480px) {
 
     /* PRIMA *//* PRIMA *//* PRIMA *//* PRIMA *//* PRIMA *//* PRIMA *//* PRIMA *//* PRIMA *//* PRIMA */
     .bg_anim_prima {
-        width: 300px;
-        height: 200px;
-        background-size: 1340px 1340px;
-        background-position: -70px -1007px;
-        -webkit-animation: prima 0.6s ease-in-out;
-        -moz-animation: prima 0.6s ease-in-out;
-        animation: prima 0.6s ease-in-out;
+        margin-top: -30px;
+        width: 285px;
+        height: 135px;
+        background-size: 500px 500px;
+        background-position: -18px -313px;
+        -webkit-animation: fine 0.6s ease-in-out;
+        -moz-animation: fine 0.6s ease-in-out;
+        animation: fine 0.6s ease-in-out;
     }
-    @-webkit-keyframes prima {
-        0% {
-            width: 150px;
-            height: 270px;
-            border: solid 1px rgba(255, 255, 255, 0.2);
-            background-size: 2000px 2000px;
-            background-position: -81px -1595px;
-        }
-        100% {
-            width: 300px;
-            height: 200px;
-            background-size: 1340px 1340px;
-            background-position: -70px -1007px;
-        }
-    }
-    @-moz-keyframes prima {
-        0% {
-            width: 150px;
-            height: 270px;
-            border: solid 1px rgba(255, 255, 255, 0.2);
-            background-size: 2000px 2000px;
-            background-position: -81px -1595px;
-        }
-        100% {
-            width: 300px;
-            height: 200px;
-            background-size: 1340px 1340px;
-            background-position: -70px -1007px;
-        }
-    }
-
-    @keyframes prima {
-        0% {
-            width: 150px;
-            height: 270px;
-            border: solid 1px rgba(255, 255, 255, 0.2);
-            background-size: 2000px 2000px;
-            background-position: -81px -1595px;
-        }
-        100% {
-            width: 300px;
-            height: 200px;
-            background-size: 1340px 1340px;
-            background-position: -70px -1007px;
-        }
-    }
-
 
 
 
@@ -99,117 +51,28 @@ and (max-device-width : 480px) {
 
     /* SECONDA *//* SECONDA *//* SECONDA *//* SECONDA *//* SECONDA *//* SECONDA *//* SECONDA *//* SECONDA */
     .bg_anim_seconda {
-
-        width: 320px;
-        height: 142px;
-        background-size: 600px 600px;
-        background-position: -33px -431px;
-        -webkit-animation: seconda 0.6s ease-in-out;
-        -moz-animation: seconda 0.6s ease-in-out;
-        animation: seconda 0.6s ease-in-out;
-    }
-    @-webkit-keyframes seconda {
-        0% {
-            width: 300px;
-            height: 200px;
-            background-size: 1340px 1340px;
-            background-position: -70px -1007px;
-        }
-        100% {
-
-            width: 320px;
-            height: 142px;
-            background-size: 600px 600px;
-            background-position: -33px -431px;
-        }
-    }
-    @-moz-keyframes seconda {
-        0% {
-            width: 300px;
-            height: 200px;
-            background-size: 1340px 1340px;
-            background-position: -70px -1007px;
-        }
-        100% {
-
-            width: 320px;
-            height: 142px;
-            background-size: 600px 600px;
-            background-position: -33px -431px;
-        }
-    }
-
-    @keyframes seconda {
-        0% {
-            width: 300px;
-            height: 200px;
-            background-size: 1340px 1340px;
-            background-position: -70px -1007px;
-        }
-        100% {
-
-            width: 320px;
-            height: 142px;
-            background-size: 600px 600px;
-            background-position: -33px -431px;
-        }
+        margin-top: -30px;
+        width: 285px;
+        height: 135px;
+        background-size: 500px 500px;
+        background-position: -18px -313px;
+        -webkit-animation: fine 0.6s ease-in-out;
+        -moz-animation: fine 0.6s ease-in-out;
+        animation: fine 0.6s ease-in-out;
     }
 
 
 
     /* TERZA *//* TERZA *//* TERZA *//* TERZA *//* TERZA *//* TERZA *//* TERZA *//* TERZA */
     .bg_anim_terza {
-        width: 320px;
-        height: 200px;
-        background-size: 600px 600px;
-        background-position: -31px -371px;
-        -webkit-animation: terza 0.6s ease-in-out;
-        -moz-animation: terza 0.6s ease-in-out;
-        animation: terza 0.6s ease-in-out;
-    }
-    @-webkit-keyframes terza {
-        0% {
-            width: 320px;
-            height: 142px;
-            background-size: 600px 600px;
-            background-position: -33px -431px;
-        }
-        100% {
-            width: 320px;
-            height: 200px;
-            background-size: 600px 600px;
-            background-position: -31px -371px;
-        }
-    }
-
-    @-moz-keyframes terza {
-        0% {
-            width: 320px;
-            height: 142px;
-            background-size: 600px 600px;
-            background-position: -33px -431px;
-        }
-        100% {
-            width: 320px;
-            height: 200px;
-            background-size: 600px 600px;
-            background-position: -31px -371px;
-        }
-    }
-
-    @keyframes terza {
-        0% {
-            width: 320px;
-            height: 142px;
-            background-size: 600px 600px;
-            background-position: -33px -431px;
-        }
-        100% {
-            width: 320px;
-            height: 200px;
-            background-size: 600px 600px;
-            background-position: -31px -371px;
-        }
+        margin-top: -30px;
+        width: 285px;
+        height: 135px;
+        background-size: 500px 500px;
+        background-position: -18px -313px;
+        -webkit-animation: fine 0.6s ease-in-out;
+        -moz-animation: fine 0.6s ease-in-out;
+        animation: fine 0.6s ease-in-out;
     }
 
 
@@ -218,64 +81,14 @@ and (max-device-width : 480px) {
 
     /* QUARTA *//* QUARTA *//* QUARTA *//* QUARTA *//* QUARTA *//* QUARTA *//* QUARTA *//* QUARTA *//* QUARTA *//* QUARTA */
     .bg_anim_quarta {
-        margin: -30px auto;
-        width: 242px;
-        height: 215px;
-        background-size: 385px 385px;
-        background-position: 1px -129px;
-        -webkit-animation: quarta 0.6s ease-in-out;
-        -moz-animation: quarta 0.6s ease-in-out;
-        animation: quarta 0.6s ease-in-out;
-    }
-    @-webkit-keyframes quarta {
-        0% {
-            margin: 0px auto;
-            width: 320px;
-            height: 200px;
-            background-size: 600px 600px;
-            background-position: -31px -371px;
-        }
-        100% {
-            margin: -30px auto;
-            width: 242px;
-            height: 215px;
-            background-size: 385px 385px;
-            background-position: 1px -129px;
-        }
-    }
-
-    @-moz-keyframes quarta {
-        0% {
-            margin: 0px auto;
-            width: 320px;
-            height: 200px;
-            background-size: 600px 600px;
-            background-position: -31px -371px;
-        }
-        100% {
-            margin: -30px auto;
-            width: 242px;
-            height: 215px;
-            background-size: 385px 385px;
-            background-position: 1px -129px;
-        }
-    }
-
-    @keyframes quarta {
-        0% {
-            margin: 0px auto;
-            width: 320px;
-            height: 200px;
-            background-size: 600px 600px;
-            background-position: -31px -371px;
-        }
-        100% {
-            margin: -30px auto;
-            width: 242px;
-            height: 215px;
-            background-size: 385px 385px;
-            background-position: 1px -129px;
-        }
+        margin-top: -30px;
+        width: 285px;
+        height: 135px;
+        background-size: 500px 500px;
+        background-position: -18px -313px;
+        -webkit-animation: fine 0.6s ease-in-out;
+        -moz-animation: fine 0.6s ease-in-out;
+        animation: fine 0.6s ease-in-out;
     }
 
 
@@ -284,62 +97,14 @@ and (max-device-width : 480px) {
 
     /* QUINTA *//* QUINTA *//* QUINTA *//* QUINTA *//* QUINTA *//* QUINTA *//* QUINTA *//* QUINTA *//* QUINTA *//* QUINTA */
     .bg_anim_quinta {
-        margin: -30px auto;
-        width: 320px;
-        height: 263px;
-        background-size: 310px 310px;
-        background-position: 8px -38px;
-        -webkit-animation: quinta 0.6s ease-in-out;
-        -moz-animation: quinta 0.6s ease-in-out;
-        animation: quinta 0.6s ease-in-out;
-    }
-    @-webkit-keyframes quinta {
-        0% {
-            margin: -30px auto;
-            width: 242px;
-            height: 215px;
-            background-size: 385px 385px;
-            background-position: 1px -129px;
-        }
-        100% {
-            margin: -30px auto;
-            width: 320px;
-            height: 263px;
-            background-size: 310px 310px;
-            background-position: 8px -38px;
-        }
-    }
-    @-moz-keyframes quinta {
-        0% {
-            margin: -30px auto;
-            width: 242px;
-            height: 215px;
-            background-size: 385px 385px;
-            background-position: 1px -129px;
-        }
-        100% {
-            margin: -30px auto;
-            width: 320px;
-            height: 263px;
-            background-size: 310px 310px;
-            background-position: 8px -38px;
-        }
-    }
-    @keyframes quinta {
-        0% {
-            margin: -30px auto;
-            width: 242px;
-            height: 215px;
-            background-size: 385px 385px;
-            background-position: 1px -129px;
-        }
-        100% {
-            margin: -30px auto;
-            width: 320px;
-            height: 263px;
-            background-size: 310px 310px;
-            background-position: 8px -38px;
-        }
+        margin-top: -30px;
+        width: 285px;
+        height: 135px;
+        background-size: 500px 500px;
+        background-position: -18px -313px;
+        -webkit-animation: fine 0.6s ease-in-out;
+        -moz-animation: fine 0.6s ease-in-out;
+        animation: fine 0.6s ease-in-out;
     }
 
 
@@ -356,54 +121,6 @@ and (max-device-width : 480px) {
         -webkit-animation: fine 0.6s ease-in-out;
         -moz-animation: fine 0.6s ease-in-out;
         animation: fine 0.6s ease-in-out;
-    }
-    @-webkit-keyframes fine {
-        0% {
-            margin: -30px auto;
-            width: 320px;
-            height: 263px;
-            background-size: 310px 310px;
-            background-position: 8px -38px;
-        }
-        100% {
-            width: 285px;
-            height: 135px;
-            background-size: 500px 500px;
-            background-position: -18px -313px;
-        }
-    }
-
-    @-moz-keyframes fine {
-        0% {
-            margin: -30px auto;
-            width: 320px;
-            height: 263px;
-            background-size: 310px 310px;
-            background-position: 8px -38px;
-        }
-        100% {
-            width: 285px;
-            height: 135px;
-            background-size: 500px 500px;
-            background-position: -18px -313px;
-        }
-    }
-
-
-    @keyframes fine {
-        0% {
-            margin: -30px auto;
-            width: 320px;
-            height: 263px;
-            background-size: 310px 310px;
-            background-position: 8px -38px;
-        }
-        100% {
-            width: 285px;
-            height: 135px;
-            background-size: 500px 500px;
-            background-position: -18px -313px;
-        }
     }
 
 
